@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   background-image: linear-gradient(to bottom right, rgba(189,13,34,1),rgba(2,0,184,1), rgba(0,0,0,1));
+} 
+
+h1{
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  z-index: 9999;
+  font-family: cursive;
+  font-weight: 1000;
+}
+
+.cal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+#result {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  background-color: #d9d9d9;
+  transform: scale(1.1);
+}
+ 
+/* LIGHT THEME */
+.cal{
+    background-color: #fff;
+}
+.cal button.btn-number{
+    background-color: #c3eaff;
+    color: #000;
+}
+.cal button.btn-operator{
+    background-color: #ffd0fd;
+    color: #f967f3;
+}
+.cal button.btn-equal{
+    background-color: #adf9e7;
+    color: #000;
+}
+
